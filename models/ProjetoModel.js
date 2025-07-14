@@ -6,6 +6,11 @@ export class ProjetoModel {
     return res.json();
   }
 
+  static async obterProjeto(id) {
+    const res = await fetch(`${BASE_URL}/projetos/${id}`);
+    return res.json();
+  }
+
   static async adicionarProjeto(projeto) {
     const res = await fetch(`${BASE_URL}/projetos`, {
       method: 'POST',
@@ -16,9 +21,7 @@ export class ProjetoModel {
   }
 
   static async excluirProjeto(id) {
-    await fetch(`${BASE_URL}/projetos/${id}`, {
-      method: 'DELETE'
-    });
+    await fetch(`${BASE_URL}/projetos/${id}`, { method: 'DELETE' });
   }
 
   static async atualizarProjeto(id, dados) {
@@ -29,4 +32,4 @@ export class ProjetoModel {
     });
     return res.json();
   }
-  }
+                }
