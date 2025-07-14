@@ -33,6 +33,35 @@
     </main>
   </div>
 
+  <!-- Modal para adicionar projeto -->
+<div id="modal-projeto" class="modal oculto">
+  <div class="modal-conteudo">
+    <h2>Novo Projeto</h2>
+    <form id="form-projeto">
+      <label>Nome do Projeto:</label>
+      <input type="text" name="nome" required>
+
+      <label>Descrição:</label>
+      <textarea name="descricao" required></textarea>
+
+      <label>Membros (separar por vírgula):</label>
+      <input type="text" name="membros">
+
+      <label>Tarefas:</label>
+      <div id="lista-tarefas-modal">
+        <label><input type="checkbox" value="Planejamento"> Planejamento</label><br>
+        <label><input type="checkbox" value="Execução"> Execução</label><br>
+        <label><input type="checkbox" value="Entrega"> Entrega</label>
+      </div>
+
+      <div class="modal-botoes">
+        <button type="button" id="cancelar">Cancelar</button>
+        <button type="submit">Adicionar</button>
+      </div>
+    </form>
+  </div>
+</div>
+  
   <script src="script.js"></script>
 </body>
   </html>
