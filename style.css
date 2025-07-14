@@ -80,3 +80,54 @@ body.tema-escuro .conteudo {
 body.tema-escuro .sidebar {
   background-color: #1c1c1c;
   }
+/* Botão flutuante no sidebar */
+.botao-flutuante {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-conteudo {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+}
+
+.modal-botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.modal input[type="text"],
+.modal textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.oculto {
+  display: none;
+  }
