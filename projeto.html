@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhes do Projeto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Projetos</h2>
+      <ul id="lista-projetos">
+        <!-- Projetos serão carregados dinamicamente -->
+      </ul>
+      <button id="btn-adicionar-projeto" class="botao-flutuante">＋</button>
+    </aside>
+
+    <main class="conteudo">
+      <header>
+        <div>
+          <button id="editar-projeto">✏️ Editar</button>
+          <button id="apagar-projeto">🗑️ Apagar</button>
+        </div>
+      </header>
+
+      <section id="info-projeto">
+        <h1 id="nome-projeto">Carregando...</h1>
+        <p id="descricao-projeto"></p>
+        <p><strong>Prazo:</strong> <span id="prazo-projeto">—</span></p>
+        <p><strong>Membros:</strong> <span id="membros-projeto">—</span></p>
+      </section>
+
+      <section id="tarefas-projeto">
+        <h2>Tarefas</h2>
+        <ul id="lista-tarefas"></ul>
+
+        <form id="form-nova-tarefa">
+          <input type="text" id="nova-tarefa-input" placeholder="Nova tarefa" required>
+          <button type="submit">Adicionar</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
